@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "a7.nowateringlass.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.nowateringlass.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "FluidRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
