@@ -1,0 +1,16 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:             
+    - name: mc-publish
+      uses: Kir-Antipov/mc-publish@v3.3.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
