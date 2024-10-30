@@ -15,6 +15,10 @@ public class Config {
             .comment("Whether to make liquid occluded by glass")
             .define("enabled", true);
 
+    public static final ForgeConfigSpec.BooleanValue FIX_ONLY = BUILDER
+            .comment("But only for glass blocks that occludes by default")
+            .define("fixOnly", true);
+
     public static final ForgeConfigSpec SPEC = BUILDER.build();
 
     @SubscribeEvent
